@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import SearchBar from './SearchBar';
+import Cars from'./Cars';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      query: '',
+      page: 1
+    }
+  }
+
+  searchUpdate = (data) => {
+    this.setState({
+      query: data
+    })
+  }
+
+  render(){
+    console.log(this.state.query)
+    return (
+      <div className="App">
+        <SearchBar callbackFromParent={this.searchUpdate}/> 
+        <Cars />
+      </div>
+
+    );
+  }
 }
 
 export default App;
