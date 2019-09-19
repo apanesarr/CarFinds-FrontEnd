@@ -32,9 +32,9 @@ export default class SearchBar extends Component{
       render() {
         const { isLoading, value } = this.state
         return (
-          <div className="header">
+          <div className="searchbar">
             <h1 className="logo">CarFinds</h1>
-            <div className="header-right">
+            <div className="searchbar-left">
             <Search 
               loading={isLoading} 
               showNoResults={false} 

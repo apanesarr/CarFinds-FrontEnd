@@ -8,7 +8,6 @@ class App extends Component{
     super(props);
     this.state = {
       query: '',
-      page: 1
     }
   }
 
@@ -19,11 +18,12 @@ class App extends Component{
   }
 
   render(){
-    console.log(this.state.query)
+    const {query} = this.state
+   
     return (
       <div className="App">
         <SearchBar callbackFromParent={this.searchUpdate}/> 
-        <Cars />
+        <Cars  query={query} />
       </div>
 
     );
