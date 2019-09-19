@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/CarFinds-FrontEnd/precache-manifest.c4ff66dc700f28781b26989afcbb1fd8.js"
+  "/CarFinds-FrontEnd/precache-manifest.f07e3d32cc074895681baccd87fa96b9.js"
 );
 
 self.addEventListener('message', (event) => {
