@@ -16,7 +16,7 @@ function CarCards(props) {
                     <b>Mileage: </b>{car.mileage}
                 </Card.Description>
                 </Card.Content>
-                <Card.Content extra>
+                <Card.Content className="card-footer" extra>
                     <a href={car.link}>{car.site}</a>
                 </Card.Content>
             </Card>
