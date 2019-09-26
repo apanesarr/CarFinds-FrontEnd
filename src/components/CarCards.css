@@ -1,5 +1,5 @@
 .txt  {
-    width: 250px;
+    width: auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -7,7 +7,7 @@
 }
 .center-cropped {
     object-fit: cover;
-    height: 200px;
+    height: 260px;
 }
 
 .card-header {
@@ -16,8 +16,7 @@
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     color: rgba(0,0,0,.85);
 }
-
 .card-footer {
     padding: 1em;
     border: 1px solid #f1f1f1;
-}                
+}

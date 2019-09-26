@@ -21,7 +21,7 @@ export default class SearchBar extends Component{
             isLoading: false,
           })
           this.handleSubmit()
-        }, 300)
+        }, 500)
        
       }
     

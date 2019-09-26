@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import CarCards from './components/CarCards';
 import Pagination from './components/Pagination';
-import config from './config.js';
+import {config} from './config.js';
 export default class Cars extends Component{
     constructor(props){
         super(props);
@@ -22,6 +22,7 @@ export default class Cars extends Component{
 
     componentDidUpdate(query, prevState) {
         if(this.state.query!==this.props.query){
+            this.setState({query: this.props.query})
             this.getData(this.state.page, this.props.query)
         }
         if(this.state.newpage!==this.state.page){
@@ -51,7 +52,6 @@ export default class Cars extends Component{
           this.setState({
             isLoaded: true,
             cars: data.results,
-            query: query,
             page: page,
             count: data.count 
           });
@@ -67,10 +67,16 @@ export default class Cars extends Component{
 
     render(){
         let {cars, isLoaded,count, page} = this.state
+        let results;
+        if((count>0 && isLoaded) || !isLoaded){
+            results = <CarCards col isLoaded={isLoaded} cars = {cars}/>;
+          } else if (count===0){
+            results = <h4>No Results Found. </h4>
+          }
         return(
             <div>
                 <div style={{paddingTop: 10}}>
-                    <CarCards col isLoaded={isLoaded} cars = {cars}/>
+                    {results}
                 </div>
                 <footer style={{padding:30}}>
                     <Pagination callbackFromParent={this.pageUpdate} page = {page} count = {Math.round(count/24)}/>

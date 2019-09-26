@@ -4,7 +4,7 @@ import "./CarCards.css"
 function CarCards(props) {
     console.log(props.cars)
     return (
-        <Card.Group className="card-columns">
+        <Card.Group centered >
             {props.isLoaded ? props.cars.map((car)=>
             <Card>
                 <Image className="center-cropped" src={car.img}/>
@@ -16,9 +16,11 @@ function CarCards(props) {
                     <b>Mileage: </b>{car.mileage}
                 </Card.Description>
                 </Card.Content>
+                <a href={car.link}>
                 <Card.Content className="card-footer" extra>
-                    <a href={car.link}>{car.site}</a>
+                    <font color={car.site==='Kijiji'? "blue":"red"}> {car.site}</font>
                 </Card.Content>
+                </a>
             </Card>
             ):<h3>Loading</h3>}
         </Card.Group>
