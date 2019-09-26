@@ -22,7 +22,7 @@ export default class Cars extends Component{
 
     componentDidUpdate(query, prevState) {
         if(this.state.query!==this.props.query){
-            this.setState({query: this.props.query})
+            this.setState({query: this.props.query, newpage:1})
             this.getData(this.state.page, this.props.query)
         }
         if(this.state.newpage!==this.state.page){
