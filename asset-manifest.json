@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CarFinds-FrontEnd/static/css/main.19b431ed.chunk.css",
-    "main.js": "/CarFinds-FrontEnd/static/js/main.c0c0dbb1.chunk.js",
-    "main.js.map": "/CarFinds-FrontEnd/static/js/main.c0c0dbb1.chunk.js.map",
-    "runtime~main.js": "/CarFinds-FrontEnd/static/js/runtime~main.6a89adbf.js",
-    "runtime~main.js.map": "/CarFinds-FrontEnd/static/js/runtime~main.6a89adbf.js.map",
-    "static/js/2.a37d630b.chunk.js": "/CarFinds-FrontEnd/static/js/2.a37d630b.chunk.js",
-    "static/js/2.a37d630b.chunk.js.map": "/CarFinds-FrontEnd/static/js/2.a37d630b.chunk.js.map",
-    "index.html": "/CarFinds-FrontEnd/index.html",
-    "precache-manifest.f07e3d32cc074895681baccd87fa96b9.js": "/CarFinds-FrontEnd/precache-manifest.f07e3d32cc074895681baccd87fa96b9.js",
-    "service-worker.js": "/CarFinds-FrontEnd/service-worker.js",
-    "static/css/main.19b431ed.chunk.css.map": "/CarFinds-FrontEnd/static/css/main.19b431ed.chunk.css.map"
+    "main.css": "/static/css/main.d6e949b5.chunk.css",
+    "main.js": "/static/js/main.b6db9d09.chunk.js",
+    "main.js.map": "/static/js/main.b6db9d09.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.1dc4db23.js",
+    "runtime~main.js.map": "/static/js/runtime~main.1dc4db23.js.map",
+    "static/js/2.f8cdcc85.chunk.js": "/static/js/2.f8cdcc85.chunk.js",
+    "static/js/2.f8cdcc85.chunk.js.map": "/static/js/2.f8cdcc85.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f057bec8d6e2b926252bb36a862acec3.js": "/precache-manifest.f057bec8d6e2b926252bb36a862acec3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d6e949b5.chunk.css.map": "/static/css/main.d6e949b5.chunk.css.map"
   }
 }
