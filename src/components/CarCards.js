@@ -1,8 +1,8 @@
 import React from 'react';
-import {Card, Image} from 'semantic-ui-react';
+import {Card, Image, Dimmer, Loader} from 'semantic-ui-react';
 import "./CarCards.css"
 function CarCards(props) {
-    console.log(props.cars)
+
     return (
         <Card.Group centered >
             {props.isLoaded ? props.cars.map((car)=>
@@ -22,7 +22,17 @@ function CarCards(props) {
                 </Card.Content>
                 </a>
             </Card>
-            ):<h3>Loading</h3>}
+            ):
+        
+            <Dimmer active inverted>
+                <Loader inverted>
+                    Loading      
+                </Loader>
+            </Dimmer>
+    
+            
+            
+            }
         </Card.Group>
     )
     
