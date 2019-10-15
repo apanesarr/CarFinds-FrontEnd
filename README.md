@@ -6,6 +6,8 @@ Finds cars from multiple websites to ensure the lowest price. You can try out th
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+#### *Make sure you are on the build branch 
+
 ## Libraries
 Install required libraries with:
 
